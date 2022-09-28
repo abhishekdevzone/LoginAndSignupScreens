@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lion-background{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.675) url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.log-back{
+    width: 100%;
+    height: 100vh;
+    background: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.askLoginContent {
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.askLoginContent h1{
+    color: white;
+    margin-bottom: 18px;
+    font-weight: 900px;
+    font-size: 42px;
+}
+
+.askLoginContent h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 42px;
+}
+
+.askLoginContent ul li {
+    display: inline-block;
+}
+
+@media (min-width:541px) {
+
+    .askLoginContent ul li a {
+        text-decoration: none;
+        padding: 16px 40px;
+        margin: 8px;
+        font-weight: 600;
+        background: transparent;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 12px;
+        font-size: medium;
+        border: 2px solid white;
+        transition: 0.45s ease;
+    }
+    
+    .askLoginContent ul li a:hover {
+        background: blue;
+        border: 2px solid blue;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    .askLoginContent {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px){
+    
+    .askLoginContent {
+        position: fixed;
+        width: 100%;
+    }
+
+    .askLoginContent ul li {
+        display: list-item;
+        margin-top: 24px;
+        padding: 10px;
+        margin-left: 24px;
+        margin-right: 24px;
+        border-radius: 12px;
+        background: transparent;
+        transition: 0.45s ease;
+        cursor: pointer;
+        border: 2px solid white;
+    }
+
+    .askLoginContent ul li:hover {
+        background: blue;
+        border: 2px solid blue;
+    }
+
+    .askLoginContent ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .askLoginContent h3 {
+        font-size: medium;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .askLoginContent h1 {
+        font-size: 24px;
+        margin-left: 24px;
+        margin-right: 24px;   
+    }
+}
+
+.blur-effect {
+    height: 100%;
+    width: 100%;
+    background: rgba(225, 225, 225, 0.01);
+    backdrop-filter: blur(50px);
+}
+
+@media (min-width:541px) {
+    .blur-effect form {
+        background: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 16px;
+        padding: 32px;
+        
+    }
+
+    @media (max-height:520px) {
+        .blur-effect form {
+            height: 75vh;
+            overflow-y: scroll;
+            border-radius: 0px;
+        }
+    }
+
+    .blur-effect form h1 {
+        text-align: center;
+    }
+    .text-input input {
+        margin-bottom: 16px;
+        padding: 8px 16px;
+        font-size: medium;
+        width: 360px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid silver;
+        transition: 0.45s ease;
+        background: rgb(240, 240, 240);
+    }
+
+    .text-input input:hover {
+        border-bottom: 2px solid gray;
+    }
+
+    .text-input input:focus {
+        border-bottom: 2px solid blue;
+    }
+
+    .blur-effect form a {
+        margin-left: 4px;
+        text-decoration: none;
+        color: blue;
+    }
+
+    .blur-effect form a:hover{
+        text-decoration: underline;
+    }
+
+    #submit-button{
+        border: none;
+        outline: none;
+        border-bottom: none;
+        background: blue;
+        color: white;
+        font-size: medium;
+        margin-top: 24px;
+        font-weight: 600;
+        padding: 8px;
+        width: 100%;
+        border-radius: 12px;
+        transition: 0.45s ease;
+    }
+
+    #submit-button:hover {
+        background: rgb(0, 110, 255);
+    }
+
+    #back-button{
+        border: none;
+        outline: none;
+        border-bottom: none;
+        background: silver;
+        color: rgb(54, 54, 54);
+        font-size: medium;
+        font-weight: 600;
+        margin-top: 8px;
+        padding: 8px;
+        width: 100%;
+        border-radius: 12px;
+        transition: 0.45s ease;
+    }
+    #back-button:hover{
+        background: rgb(141, 141, 141);
+        color: black;
+    }
+    .alternativePart {
+        text-align: center;
+        margin-top: 24px;
+        margin-top: 24px;
+    }
+}
+
+
+@media (max-width:540px) {
+    .blur-effect form {
+        position: absolute;
+        background: white;
+        left: 0;
+        text-align: center;
+        height: 100vh;
+        right: 0;    
+    }
+
+    .blur-effect form {
+        overflow-y: scroll;
+    }
+
+    .blur-effect form h1 {
+        text-align: center;
+        padding-top: 32px;
+    }
+
+    .blur-effect{
+        background: silver;
+    }
+
+    .text-input {
+        width: 100%;
+        text-align: center;
+    }
+    .text-input input {
+        position: static;
+        margin-bottom: 16px;
+        padding: 8px 16px;
+        font-size: medium;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid silver;
+        width: 360px;    
+        background: rgb(240, 240, 240);
+    }
+
+    .text-input input:hover {
+        border-bottom: 2px solid gray;
+    }
+
+    .text-input input:focus {
+        border-bottom: 2px solid blue;
+    }
+
+    .blur-effect form a {
+        margin-left: 4px;
+        text-decoration: none;
+        color: blue;
+    }
+
+    .blur-effect form a:hover{
+        text-decoration: underline;
+    }
+
+    #submit-button{
+        border: none;
+        outline: none;
+        border-bottom: none;
+        background: blue;
+        color: white;
+        font-size: medium;
+        margin-top: 24px;
+        font-weight: 600;
+        padding: 8px;
+        width: 392px;
+        border-radius: 12px;
+    }
+
+    #submit-button:hover {
+        background: rgb(0, 110, 255);
+    }
+
+    #back-button{
+        border: none;
+        outline: none;
+        border-bottom: none;
+        background: silver;
+        color: rgb(54, 54, 54);
+        font-size: medium;
+        font-weight: 600;
+        margin-top: 8px;
+        padding: 8px;
+        width: 392px;
+        border-radius: 12px;
+    }
+    #back-button:hover{
+        background: rgb(141, 141, 141);
+        color: black;
+    }
+    .alternativePart {
+        text-align: center;
+        margin-top: 24px;
+        margin-top: 24px;
+    }
+}
+
+
+@media (max-width:460px) {
+    #submit-button{
+        width: 322px;
+    }
+    #back-button{
+        width: 322px;
+    }
+
+    .text-input input {
+        width: 290px;
+    }
+}
+
+@media (max-width:366px) {
+    #submit-button{
+        width: 282px;
+    }
+    #back-button{
+        width: 282px;
+    }
+
+    .text-input input {
+        width: 250px;
+    }
+}
+
+@media (max-width:320px) {
+    #submit-button{
+        width: 242px;
+    }
+    #back-button{
+        width: 242px;
+    }
+
+    .text-input input {
+        width: 210px;
+    }
+}
+
+@media (max-width:290px) {
+    #submit-button{
+        width: 202px;
+    }
+    #back-button{
+        width: 202px;
+    }
+
+    .text-input input {
+        width: 170px;
+    }
+    .blur-effect form a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:250px) {
+    #submit-button{
+        width: 172px;
+    }
+    #back-button{
+        width: 172px;
+    }
+
+    .text-input input {
+        width: 140px;
+    }
+    .blur-effect form a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
